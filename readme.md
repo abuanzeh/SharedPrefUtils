@@ -1,6 +1,7 @@
 # Preview
 This library came to facilitate the process of saving and reading data from anywhere
-within the application and without the need to re-write the code again.
+Within the application and without the need to retype the code again , 
+All data can be saved so that you can save a complete list and read it from anywhere within the application.
 
 # Dependencies 
 Add it in your root build.gradle at the end of repositories:
