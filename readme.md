@@ -16,6 +16,8 @@ Add the dependency :
 ```
 implementation 'com.github.abuanzeh:SharedPrefUtils:1.0.1'
 ```
+
+# How to use
        val yourList = arrayListOf<YourModel>()
         yourList.add(YourModel())
         yourList.add(YourModel())
