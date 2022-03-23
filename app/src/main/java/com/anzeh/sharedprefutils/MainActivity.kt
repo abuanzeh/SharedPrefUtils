@@ -17,31 +17,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val yourList = arrayListOf<YourModel>()
-        yourList.add(YourModel())
-        yourList.add(YourModel())
-        yourList.add(YourModel())
-
-        //Set your sharedPreferences
-        val sharedPreferencesUtil: SharedPreferencesUtil = SharedPreferencesUtil.getInstance(this)
-        sharedPreferencesUtil.setStringPreferences(NAME, "Mohamed AbuAzneh")
-        sharedPreferencesUtil.setLongPreferences(PHONE_NUMBER, 962554545450)
-        sharedPreferencesUtil.setIntPreferences(NUMBER_OF_POINT, 5)
-        sharedPreferencesUtil.setBooleanPreferences(IS_USER_LOGGED_IN, true)
-
-
-        //get your sharedPreferences
-        sharedPreferencesUtil.getStringPreferences(NAME, "")
-        sharedPreferencesUtil.getLongPreferences(PHONE_NUMBER, 0)
-        sharedPreferencesUtil.getIntPreferences(NUMBER_OF_POINT, 0)
-        sharedPreferencesUtil.getBooleanPreferences(IS_USER_LOGGED_IN, false)
-
-        //save List<Object> to SharedPreferences
-        sharedPreferencesUtil.saveList(LIST, yourList)
-
-        //get List<Object> from SharedPreferences
-        var myList = sharedPreferencesUtil.getList<YourModel>(LIST)
-
 
     }
 
