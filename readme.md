@@ -26,23 +26,24 @@ implementation 'com.github.abuanzeh:SharedPrefUtils:1.0.1'
 
         //Set your sharedPreferences
         val sharedPreferencesUtil: SharedPreferencesUtil = SharedPreferencesUtil.getInstance(this)
-        sharedPreferencesUtil.setStringPreferences(NAME, "Mohamed AbuAzneh")
-        sharedPreferencesUtil.setLongPreferences(PHONE_NUMBER, 962554545450)
-        sharedPreferencesUtil.setIntPreferences(NUMBER_OF_POINT, 5)
-        sharedPreferencesUtil.setBooleanPreferences(IS_USER_LOGGED_IN, true)
+        sharedPreferencesUtil.setStringPreferences(YOUR_KEY, "Mohamed AbuAzneh")
+        sharedPreferencesUtil.setLongPreferences(YOUR_KEY, 962554545450)
+        sharedPreferencesUtil.setIntPreferences(YOUR_KEY, 5)
+        sharedPreferencesUtil.setBooleanPreferences(YOUR_KEY, true)
 
 
         //get your sharedPreferences
-        sharedPreferencesUtil.getStringPreferences(NAME, "")
-        sharedPreferencesUtil.getLongPreferences(PHONE_NUMBER, 0)
-        sharedPreferencesUtil.getIntPreferences(NUMBER_OF_POINT, 0)
-        sharedPreferencesUtil.getBooleanPreferences(IS_USER_LOGGED_IN, false)
+        sharedPreferencesUtil.getStringPreferences(YOUR_KEY, "")
+        sharedPreferencesUtil.getLongPreferences(YOUR_KEY, 0)
+        sharedPreferencesUtil.getIntPreferences(YOUR_KEY, 0)
+        sharedPreferencesUtil.getBooleanPreferences(YOUR_KEY, false)
 
         //save List<Object> to SharedPreferences
         sharedPreferencesUtil.saveList(LIST, yourList)
 
         //get List<Object> from SharedPreferences
-        var myList = sharedPreferencesUtil.getList<YourModel>(LIST)
+        var myList = sharedPreferencesUtil.getList<YourModel>(YOUR_KEY)
+
 
 
    
