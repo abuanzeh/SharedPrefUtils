@@ -39,7 +39,7 @@ implementation 'com.github.abuanzeh:SharedPrefUtils:1.0.1'
         sharedPreferencesUtil.getBooleanPreferences(YOUR_KEY, false)
 
         //save List<Object> to SharedPreferences
-        sharedPreferencesUtil.saveList(LIST, yourList)
+        sharedPreferencesUtil.saveList(YOUR_KEY, yourList)
 
         //get List<Object> from SharedPreferences
         var myList = sharedPreferencesUtil.getList<YourModel>(YOUR_KEY)
